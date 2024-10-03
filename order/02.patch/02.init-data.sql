@@ -1,19 +1,9 @@
 USE ORDER_MODULE;
--- 插入假數據
-INSERT INTO CUSTOMER VALUES
-('CUST001', '張三', 'zhangsan@email.com', '0912345678', '台北市中山區中山北路1號'),
-('CUST002', '李四', 'lisi@email.com', '0923456789', '台中市西屯區文心路100號'),
-('CUST003', '王五', 'wangwu@email.com', '0934567890', '高雄市前金區中正路200號');
 
 INSERT INTO SALER VALUES
 ('SALER001', '商家A', 'salera@email.com', '0956789012'),
 ('SALER002', '商家B', 'salerb@email.com', '0967890123'),
 ('SALER003', '商家C', 'salerc@email.com', '0978901234');
-
-INSERT INTO PRODUCT (product_name, price, description, category) VALUES
-('iPhone 13', 26900.00, 'Apple最新智能手機，搭載A15仿生晶片', '智能手機'),
-('Samsung Galaxy S21', 24900.00, 'Samsung旗艦智能手機，具備優秀的相機性能', '智能手機'),
-('華碩 ROG 電競筆電', 39900.00, '高性能電競筆記型電腦，搭載最新GPU', '筆記型電腦');
 
 INSERT INTO ORDERS VALUES
 ('ORD001', 'CUST001', '2024-10-01', 'SALER001', 'Delivered', 26900.00),
