@@ -1,0 +1,8 @@
+CREATE TABLE ORDERS (
+    ORDER_ID VARCHAR(45) PRIMARY KEY,
+    CUSTOMER_ID VARCHAR(30),
+    ORDER_DATE DATE,
+    SALER_ID VARCHAR(30),
+    ORDER_STATUS ENUM('Pending', 'Processing', 'Shipped', 'Delivered', 'Cancelled') DEFAULT 'Pending',
+    TOTAL_AMOUNT DECIMAL(10, 2)
+);
