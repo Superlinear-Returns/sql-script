@@ -1,0 +1,5 @@
+CREATE TABLE CART (
+    user_id BIGINT NOT NULL,
+    product_id BIGINT NOT NULL,
+    quantity INT NOT NULL,
+);
