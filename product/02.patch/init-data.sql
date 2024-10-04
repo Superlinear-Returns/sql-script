@@ -1,5 +1,5 @@
 -- 測試假資料/ Product
-INSERT INTO PRODUCT (product_name, price, description, category, created_time, last_modified_time)
+INSERT INTO PRODUCT (PRODUCT_NAME, PRICE, DESCRIPTION, CATEGORY, CREATE_TIME, UPDATE_TIME)
 VALUES
 ('筆記型電腦', 30000, '高效能筆記型電腦', 'ELECTRICS', NOW(), NOW()),
 ('智慧型手機', 15000, '最新款智慧型手機', '電子產品', NOW(), NOW()),
@@ -7,7 +7,7 @@ VALUES
 ('耳機', 5000, '降噪耳機', 'ACCESSORIES', NOW(), NOW()),
 ('遊戲主機', 10000, '次世代遊戲主機', 'ENTERTAINMENT', NOW(), NOW());
 
-INSERT INTO CART (user_id, product_id, quantity)
+INSERT INTO CART (USER_ID, PRODUCT_ID, QUANTITY)
 VALUES
 (1, 1, 2),
 (2, 3, 1),
@@ -15,7 +15,7 @@ VALUES
 (1, 2, 1),
 (4, 5, 1);
 
-INSERT INTO PRODUCT_IMAGE (product_id, image_url, image_type, image_sort, created_time, last_modified_time)
+INSERT INTO PRODUCT_IMAGE (PRODUCT_ID, IMAGE_URL, IMAGE_TYPE, IMAGE_SORT, CREATE_TIME, UPDATE_TIME)
 VALUES
 (1, 'https://example.com/images/laptop.jpg', 'jpg', 1, NOW(), NOW()),
 (2, 'https://example.com/images/smartphone.jpg', 'jpg', 1, NOW(), NOW()),
@@ -23,7 +23,7 @@ VALUES
 (4, 'https://example.com/images/headphones.jpg', 'jpg', 1, NOW(), NOW()),
 (5, 'https://example.com/images/gamingconsole.jpg', 'jpg', 1, NOW(), NOW());
 
-INSERT INTO PRODUCT_DETAIL (product_id, specification, additional_categories, created_time, last_modified_time)
+INSERT INTO PRODUCT_DETAIL (PRODUCT_ID, SPECIFICATION, ADDITIONAL_CATEGORIES, CREATE_TIME, UPDATE_TIME)
 VALUES
 (1, '16GB 記憶體, 512GB SSD', '筆記型電腦', NOW(), NOW()),
 (1, '32GB 記憶體, 1TB SSD', '筆記型電腦', NOW(), NOW()),
@@ -33,7 +33,7 @@ VALUES
 (4, '主動降噪, 無線', '音響設備', NOW(), NOW()),
 (5, '4K 螢幕輸出, 支援 VR', '電子娛樂', NOW(), NOW());
 
-INSERT INTO PRODUCT_COMMENT (product_id, user_id, comment_rank, comment_detail, created_time, last_modified_time)
+INSERT INTO PRODUCT_COMMENT (PRODUCT_ID, USER_ID, COMMENT_RANK, COMMENT_DETAIL, CREATE_TIME, UPDATE_TIME)
 VALUES
 (1, 1, 5, '這台筆記型電腦效能非常好！', NOW(), NOW()),
 (2, 2, 4, '手機螢幕解析度很高，值得推薦。', NOW(), NOW()),
