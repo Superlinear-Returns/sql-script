@@ -7,13 +7,13 @@ VALUES
 ('耳機', 5000, '降噪耳機', 'ACCESSORIES', NOW(), NOW()),
 ('遊戲主機', 10000, '次世代遊戲主機', 'ENTERTAINMENT', NOW(), NOW());
 
-INSERT INTO CART (user_id, product_id, quantity, created_time, last_modified_time)
+INSERT INTO CART (user_id, product_id, quantity)
 VALUES
-(1, 1, 2, NOW(), NOW()),
-(2, 3, 1, NOW(), NOW()),
-(3, 4, 3, NOW(), NOW()),
-(1, 2, 1, NOW(), NOW()),
-(4, 5, 1, NOW(), NOW());
+(1, 1, 2),
+(2, 3, 1),
+(3, 4, 3),
+(1, 2, 1),
+(4, 5, 1);
 
 INSERT INTO PRODUCT_IMAGE (product_id, image_url, image_type, image_sort, created_time, last_modified_time)
 VALUES
